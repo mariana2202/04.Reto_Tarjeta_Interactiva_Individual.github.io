@@ -1,0 +1,201 @@
+*{  margin:0px;
+    padding: 0px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+    justify-content: center;
+    font-weight: 800;
+    color: hsl(0, 0%, 0%); 
+}
+
+body{
+    background-image: url("images/bg-pattern2.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    font-size: 28px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.card{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 5px 5px 10px lightgrey;
+}
+
+.bg-blue{
+    color:hsl(207, 100%, 50%);
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.bg-white2{ 
+    color: hsl(0, 0%, 100%);
+}
+
+h6{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+h5{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.triangleimg{
+    background-image: url("images/casa.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.precio{
+    font-size: xx-large;
+    color: hsl(0, 0%, 0%);
+    font-weight: bold;
+    font-size: 30px;
+}
+   
+.cont-precio{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2%;
+    box-shadow: 2px 2px 15px rgb(112, 111, 111);
+    max-width: 560px;
+    width: 100%;
+}
+
+.visitas{
+    font-weight: 700;
+    letter-spacing: 1px;
+}   
+
+.mes{
+    top: 12px;
+    position: absolute;
+    margin-left: 55px;
+}
+
+.rango{
+    margin:30px 0 20px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: linear-gradient(90deg, hsl(207, 100%, 50%) 50%, hsl(207, 74%, 75%) 50%);
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px auto;
+    outline: none;
+    cursor: pointer;
+}
+
+.rango::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 34px;
+    height: 34px;
+    background: rgb(0, 0, 0);
+    border-radius: 30%;
+    background-image: url("images/peso.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: -webkit-grab;
+    box-shadow: 0px 12px 10px hsl(0, 0%, 29%);
+}
+
+.rango::-webkit-slider-thumb:active{
+    background-color: hsl(0, 0%, 26%);
+    cursor: grabbing;
+}
+
+.textolinea{
+    display: inline-block;
+    font-size: 18px;
+}
+
+.linea{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+label{
+    align-items: center;
+    margin: 0px;
+}
+
+.cambio{
+    display: flex;
+    width: 44px;
+    height: 24px;
+}
+
+.cambio input{
+    display: none;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: hsl(0, 0%, 0%);
+    cursor: pointer;
+    border-radius: 34px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider::before{
+    content: "";
+    height: 15px;
+    width: 15px;
+    border-radius: 34px;
+    margin: 3px 4px;
+    background-color: hsl(0, 0%, 100%);;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.cambio input:checked + .slider::before{
+    margin-left: 25px;
+} 
+
+.slider:hover{
+    background-color: #008cff;
+}
+
+.descuento{
+    background-color: hsl(14, 92%, 95%);
+    color: hsl(0, 100%, 50%);
+    border-radius: 10px;
+}
+
+.buttons{
+    border-radius: 100px; 
+    color:rgb(255, 255, 255); 
+    background-color: hsl(207, 100%, 50%);
+    border-style: none;
+    font-size: 18px;
+    font-weight: 800;
+}
+  
+.buttons:hover{
+    background-color: hsl(0, 0%, 0%); 
+    color: hsl(0, 0%, 100%);
+}
+
+ul li{
+    padding-bottom: 0.5em;
+    list-style-position: inside;
+    font-size: 17px;
+    font-weight: 400;
+    list-style-image:url("images/icon-check.png");
+}
+
+.bordecaja{
+    border-bottom: 1px solid rgba(51, 51, 51, 0.568);
+}
+
+#casas{
+    width: 70px;
+    height: 70px;
+}
