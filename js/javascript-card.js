@@ -47,6 +47,8 @@ function printCasas(){
     };
 };
 
+
+
 // Animar Fondo de Slider
 slider.addEventListener("input", function(){
     let x = slider.value;
@@ -73,6 +75,7 @@ promoSwitch.addEventListener("input", function(){
         let x = price.textContent*0.20;
         price.textContent = price.textContent - x;
         console.log(x);
+        printCasas2();
     }else{
         printCasas();
     };
@@ -82,18 +85,23 @@ promoSwitch.addEventListener("input", function(){
 function printCasas2(){
     if(slider.value == "0"){
         casas.src = "./images/casas/c1.png";
-        price.textContent = "80";
+        // price.textContent = price.textContent - x;
+        // price.textContent = "80";
     }else if(slider.value == "25"){
         casas.src = "./images/casas/c3.png";
-        price.textContent = "120";
+        // price.textContent = price.textContent - x;
+        // price.textContent = "120";
     }else if(slider.value == "50"){
         casas.src = "./images/casas/c7.png";
-        price.textContent = "180";
+        // price.textContent = price.textContent - x;
+        // price.textContent = "180";
     }else if(slider.value == "75"){
         casas.src = "./images/casas/c9.png";
-        price.textContent = "240";
+        // price.textContent = price.textContent - x;
+        // price.textContent = "240";
     }else if(slider.value == "100"){
         casas.src = "./images/casas/c11.png";
-        price.textContent = "460";
+        // price.textContent = price.textContent - x;
+        // price.textContent = "460";
     };
 };
